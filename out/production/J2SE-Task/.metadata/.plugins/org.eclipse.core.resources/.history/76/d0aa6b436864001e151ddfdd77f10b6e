@@ -1,0 +1,20 @@
+package com.practice;
+
+class Grand_Father  {
+	
+	public Grand_Father() {
+		
+		System.out.println("Grand Father have plot");
+	}
+	
+}
+
+
+
+public class Multi_Level_Inheritance {
+
+	public static void main(String[] args) {
+
+	}
+
+}

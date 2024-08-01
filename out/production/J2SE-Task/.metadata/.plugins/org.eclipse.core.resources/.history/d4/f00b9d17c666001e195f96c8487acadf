@@ -1,0 +1,19 @@
+package com.practice;
+
+class Test {
+
+	static int a = 10;
+	static int b = 20;
+	int x = 30;
+	int y = 40;
+
+	public static void main(String[] args) {
+		Test e1 = new Test();
+		Test e2 = new Test();
+
+		e1.x = 70;
+		e1.y = 80;
+		System.out.println("e1.x=" + e1.x + "    e2.x=" + e2.x);
+		System.out.println("e1.y=" + e1.y + "    e2.y=" + e2.y);
+	}
+}

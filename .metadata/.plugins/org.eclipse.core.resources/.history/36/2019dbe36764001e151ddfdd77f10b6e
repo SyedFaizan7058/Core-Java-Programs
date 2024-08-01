@@ -1,0 +1,15 @@
+package com.practice;
+
+class Grand_Father  {
+	
+}
+
+
+
+public class Multi_Level_Inheritance {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.practice;
+
+class Test {
+
+	public void main(String[] args) {
+
+		Test t=new Test();
+		t.main(args);
+		System.out.println("Hello world!");
+
+	}
+}

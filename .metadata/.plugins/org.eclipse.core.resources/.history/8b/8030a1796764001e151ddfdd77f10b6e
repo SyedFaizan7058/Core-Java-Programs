@@ -1,0 +1,10 @@
+package com.practice;
+
+public class Grand_Father {
+	
+	public Grand_Father(){
+		
+		System.out.println("");
+	}
+
+}

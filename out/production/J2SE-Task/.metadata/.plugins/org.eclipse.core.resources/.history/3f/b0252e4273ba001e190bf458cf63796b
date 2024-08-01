@@ -1,0 +1,30 @@
+package com.map_interface.hospital;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class HospitalFinder {
+
+	public static void main(String[] args) {
+
+		List<String> add = new ArrayList<>();
+		add.add("Cardiac");
+		add.add("ENT");
+		add.add("Ortho");
+		add.add("Pediatric");
+		add.add("Gastro");
+
+		Hospital h1 = new Hospital("YASHODHA", add, "MATHEWS", "9848222222", "Sec");
+		Hospital h2 = new Hospital("Prime", add, "MATHEWS", "9848222222", "Sec");
+		HospitalService h = new HospitalService();
+		h.addHospital(h1);
+		h.addHospital(h2);
+		HashMap<Integer, String> hospitals = h.getHospitals();
+		hospitals.forEach((k, v) -> System.out.println(k + " " + v));
+		
+		h.getHospitalDetails(104);
+
+	}
+
+}

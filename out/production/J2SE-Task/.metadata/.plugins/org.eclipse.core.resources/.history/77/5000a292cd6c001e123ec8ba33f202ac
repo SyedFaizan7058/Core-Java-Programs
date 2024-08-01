@@ -1,0 +1,45 @@
+package com.overload.time;
+
+class Shape {
+
+}
+
+class Circle extends Shape {
+
+	double PI = 3.14;
+
+	public void getArea(double radius) {
+
+		System.out.println(PI * radius * radius);
+
+	}
+}
+
+class Rectangle extends Shape {
+
+	public void getArea(double lenth, double width) {
+
+		System.out.println(lenth * width);
+	}
+}
+
+class Triangle extends Shape {
+
+	public void getArea(double base, double height) {
+
+		System.out.println(0.5*base * height);
+	}
+}
+
+public class Main_Area {
+
+	public static void main(String[] args) {
+		
+		Circle c=new Circle();
+		c.getArea(5.2);
+
+
+		
+	}
+
+}

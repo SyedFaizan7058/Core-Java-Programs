@@ -1,0 +1,15 @@
+package com.practice;
+
+public class Inheritance_main {
+
+	public static void main(String[] args) {
+
+		Super c = new Super();
+		Sub_Class s = new Sub_Class();
+		s.showData();
+		c.setData(300, 400);
+		System.out.println(c);
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.overload.time;
+
+class Shape {
+
+}
+
+class Circle extends Shape {
+
+	double PI = 3.14;
+
+	public void getCircle(int radius) {
+
+		System.out.println(PI * radius * radius);
+
+	}
+}
+
+public class Main_Area {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.practice;
+
+public class Sub_Class extends Super {
+	
+	public void showData() {
+		
+		System.out.println(x);
+		System.out.println(y);
+	}
+	
+
+}

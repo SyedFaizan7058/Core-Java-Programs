@@ -1,0 +1,34 @@
+package com.map_interface.hospital;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class HospitalFinder {
+
+	public static void main(String[] args) {
+
+		HospitalService hospitalService = new HospitalService();
+
+        Hospital hospital1 = new Hospital("YASHODA", List.of("Cardiac", "ENT", "Ortho", "Pediatric", "Gastro"),
+                "MATHEWS", "9848222222", "Sec");
+        int code1 = hospitalService.addHospital(hospital1);
+
+        Hospital hospital2 = new Hospital("ABC Hospital", List.of("Dermatology", "Ophthalmology", "Dental"),
+                "John Doe", "9876543210", "City Center");
+        int code2 = hospitalService.addHospital(hospital2);
+
+        System.out.println("Hospital Codes and Names: " + hospitalService.getHospitals());
+
+        // Test getHospitalDetails
+        int searchCode = 101; // Replace with an existing hospital code for testing
+        Hospital foundHospital = hospitalService.getHospitalDetails(searchCode);
+        if (foundHospital != null) {
+            System.out.println("Hospital Details: " + foundHospital);
+        } else {
+            System.out.println("Hospital with code " + searchCode + " not found");
+        }
+
+	}
+
+}

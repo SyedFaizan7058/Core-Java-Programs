@@ -1,0 +1,32 @@
+package com.numbers;
+
+import java.util.function.Supplier;
+
+public class FibbonancySeries
+
+{
+	public static void main(String[] args) {
+
+		Supplier<Integer> f = () -> {
+
+			int f1 = 1, f2 = 0, f3 = 0;
+//			int n = 10;
+
+//			System.out.print(f3 + " ");
+			f3 = f1 + f2;
+			f1 = f2;
+			f2 = f3;
+
+			return f3;
+
+		};
+
+		int n = 10;
+
+		for (int i = 0; i < n; i++) {
+
+			System.out.println(f.get());
+		}
+
+	}
+}

@@ -1,0 +1,16 @@
+package com.practice;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class UppercaseConverter {
+	public static void main(String[] args) {
+		List<String> inputList = Arrays.asList("abcd", "efgh", "jklm", "xyz");
+
+		List<String> resultList = inputList.stream().map(s -> s.substring(0, 1).toUpperCase() + s.substring(1))
+				.collect(Collectors.toList());
+
+		resultList.forEach(System.out::println);
+	}
+}

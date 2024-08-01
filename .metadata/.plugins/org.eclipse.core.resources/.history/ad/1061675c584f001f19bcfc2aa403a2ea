@@ -1,0 +1,23 @@
+package com.practice;
+
+ class demo {
+
+	public demo(String a) {
+		System.out.println("B");
+		// TODO Auto-generated constructor stub
+	}
+
+}
+
+public class Test extends demo{
+
+//	public Test(String s) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		new Test("C");
+		System.out.println("");
+	}
+	
+}
